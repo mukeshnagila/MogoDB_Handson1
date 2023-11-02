@@ -1,0 +1,40 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: lightblue;
+}
+
+h1{
+    text-align: center;
+    font-weight: 800;
+}
+
+.content{
+    padding: 0% 10%;
+    background-color: lightcoral;
+}
+
+.forqna{
+    width: 100%;
+    min-height: 100px;
+    background-color: aquamarine;
+}
+
+.question{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.Ans{
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.mainqsn{
+    color: white;
+    text-shadow: 5px 5px 10px gray;
+}

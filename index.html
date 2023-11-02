@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase Handson 1</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h1>DataBase Handson 1</h1>
+    <div class="content">
+        <div class="mainqsn">
+            <h2>Create a database , give it name like ""Human_Resource"". Create a collection inside this named ""employee""---- And Do the following task</h2>
+            <h3>Link of List-- <span><button><a href="https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1640781204638-employee.json">click for list</a></button></span></h3>
+        </div>
+        <div class="forqna">
+            <h3 class="question">Q.1 - Create a database , give it name like ""Human_Resource"". Create a collection inside this named ""employee""...?</h3>
+            <h4 class="Ans">Ans- use Human_Resource AND after that db.employee.insertMany([{ write the details of employee here }])</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.2 - Query the collection ""employee"" and list all the documents...?</h3>
+            <h4 class="Ans">Ans-  db.employee.find({})</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.3 - Query the collection ""employee"" and list the employees who are having salary more than 30000...?</h3>
+            <h4 class="Ans">Ans-  db.employee.find({"salary":{$gt:'30000'}})</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.4 - Query the collection ""employee"" and list the employees who are having experience more than 2 years....?</h3>
+            <h4 class="Ans">Ans-  db.employee.find({"overallExp":{$gt:'2'}})</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.5 - Query the collection ""employee"" and list the employees who are graduated after 2015 and having experience more than 1 year....?</h3>
+            <h4 class="Ans">Ans-  db.employee.find({"yearGrad":{$gt:"2015"},"overallExp":{$gte:'1'}})</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.6 - Query the collection ""employee"" and update the salary of the employee whose salary is greater than 70000 to 65000.....?</h3>
+            <h4 class="Ans">Ans-  db.employee.updateMany({"salary":{$gt:"70000"}},{$set:{"salary":"55000"}})</h4>
+        </div>
+
+        <div class="forqna">
+            <h3 class="question">Q.7 - Delete all the documents from ""employee"" where last company is Y".....?</h3>
+            <h4 class="Ans">Ans-  db.employee.deleteMany({"lastCompany":"Y"})</h4>
+        </div>
+    </div>
+</body>
+</html>
